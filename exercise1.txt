@@ -1,0 +1,3 @@
+Difference between null and undefined
+Null is having no legal or binding force or associated with zero while undefined when something hasn't been clearly described,
+without fixed limits.
