@@ -1,0 +1,15 @@
+Declaration-
+             Its when the variable is registered using a given name 
+             within the corresponding scope. When you declare a variable 
+             it is automatically initialized,which means memory is allocated
+             for the variable by the java script engine.
+
+
+Initialization-
+             Variables are created when their containing Lexicall Environment
+             is instantiated and are initialized to undefined when created.
+             Initialization is the means of assigning an initial value to a variable. So  
+             undefined is the intial value of a declared variable. 
+
+              
+ 
