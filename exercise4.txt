@@ -1,0 +1,44 @@
+items={"soaps":150.00,"soda":60,"pens":60.00,"bucket":200.00}
+
+{soaps: 150, soda: 60, pens: 60, bucket: 200}
+
+
+var quantity = 2;
+
+
+
+function
+
+calculateItemCost(item,quantity)
+
+{items={"soaps":150.00,"soda":60,"pens":60.00,"bucket":200.00};
+
+var price=items[item]*quantity;
+
+console.log(quantity+" "+ item +" for KES "+price);}
+
+
+
+
+
+
+calculateItemCost("soaps",2);
+
+
+                                                                       
+2 soaps for KES 300.00
+
+
+
+
+
+calculateItemCost("bucket",2);
+
+ 2 bucket for KES 400.00
+
+2 bucket for KES 400.00
+
+
+calculateItemCost("soda",2);                                           
+
+2 soda for KES 120.00
