@@ -1,0 +1,104 @@
+var a=1;
+
+
+
+
+function foo(){
+
+
+a=3;
+
+console.log(a);
+
+
+}
+
+
+function bar(){
+var a=2;
+
+}
+
+function bar(){
+
+var a=2;
+
+console.log(a);
+
+}
+
+undefined
+
+console.log(a);
+
+
+function foo(){
+var a=2;
+if(a>0){
+let b=3;
+var c=a+b;
+console.log(c);
+}
+console.log(a);
+console.log(b);
+console.log(c);  
+
+}
+foo()
+5
+2
+5
+2
+
+
+
+function foo(param){
+return param;
+}
+var baz=function bazf(){}
+var response=foo(bazf)
+
+
+var a=2;
+(function IIFE(){
+  var a= 3;
+  console.log(a);
+})();
+console.log(a);
+3
+2
+
+
+
+function outer(param1) {
+  function inner(param2){
+return param1 + param2;
+  }
+  return inner;
+}
+
+var innerFunc = outer(2);
+var result = innerFunc(5);
+console.log(result);
+
+7
+
+function User() {
+  var username, password;
+  
+  function doLogin(usr, pwd) {
+    username = usr;
+    password = pwd;
+    console.log("Yey! Logged in "+username)
+    
+  }
+  var publicAPI={
+    login: doLogin
+  }
+  return publicAPI;
+  
+}
+var Edith = User();
+Edith.login("Edith","mypwd3792");
+
+"Yey! Logged in Edith"
