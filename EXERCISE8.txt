@@ -1,0 +1,29 @@
+DECONSTRUCT
+
+let user = {
+ name: "Jane Doe",
+ years: 20
+};
+
+let{name,years,isStudent="false"}=user;
+
+console.log(name,years,isStudent)
+"Jane Doe"
+20
+
+
+ARROW FUNCTION
+
+let ask = (question, yes, no) =>
+{
+  if(confirm(question)) yes()
+  else no();
+}
+ask(
+  "Do you agree?",
+  ()=> { console.log("You agreed."); },
+  ()=> { console.log("You canceled the execution."); }
+);
+
+"false"
+"You agreed."
