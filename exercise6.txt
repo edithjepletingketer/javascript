@@ -34,3 +34,32 @@ getFruit="grapes";
 getFruit="kiwi";
 
 "kiwi"
+
+Correction
+
+let user = {
+  firstName:'Edith',
+  lastName: 'Jepleting'
+};
+alert(user.firstName);
+alert(user.lastName);
+
+let name = ["Edith", "Jepleting"];
+var firstName = name[0];
+var lastName = name[1];
+console.log(lastName);
+
+
+
+
+let name = ["Edith", "Jepleting"];
+let[firstName, lastName] = name;
+console.log(lastName);
+
+let fruits = ["mango","banana"];
+let[fruitOne, fruit2] = fruits;
+console.log(fruitOne,fruit2);
+
+"Jepleting"
+"mango"
+"banana"
