@@ -1,0 +1,70 @@
+var body = document.body
+body.style.backgroundColor = "#C0C0C0"
+
+var h1=document.getElementById("title")
+h1.style.color="green"
+
+var h3 = document.getElementById("titletwo");
+titletwo.innerHTML =titletwo.innerHTML.toUpperCase();
+
+var h3 = document.getElementById("titlethree");
+titlethree.innerHTML =titlethree.innerHTML.toUpperCase();
+
+var fruit= document.createElement("li")
+fruit.innerHTML="Apple"
+var ul = document.getElementById("fruList")
+ul.appendChild(fruit)
+
+var fruit= document.createElement("li")
+fruit.innerHTML="Pinneapple"
+var ul = document.getElementById("fruList")
+ul.appendChild(fruit)
+
+
+var vegetable= document.createElement("li")
+vegetable.innerHTML="Courgettes"
+var ul = document.getElementById("vegList")
+ul.appendChild(vegetable)
+
+var vegetable= document.createElement("li")
+vegetable.innerHTML="Spinach"
+var ul = document.getElementById("vegList")
+ul.appendChild(vegetable)
+
+
+ASYNC 
+
+Async The word “async” before a function means one simple thing:
+a function always returns a promise. Even If a function actually returns a non-promise value, 
+prepending the function definition with the “async” keyword directs JavaScript to automatically 
+wrap that value in a resolved promise.
+
+async function foo() {
+  return "JS is awesome";
+}
+
+foo().then(alert);
+ 
+The promise can be returned, that would be the same as:
+async function foo() {
+  return Promise.resolve("JS is Awesome");
+}
+
+foo().then(alert);
+
+AWAIT
+
+The keyword await makes JavaScript wait until that promise settles and returns its result.
+
+async function foo() {
+
+  let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("JS is awesome"), 3000)
+  });
+
+  let result = await promise;
+
+   alert(result);
+}
+
+foo();  
