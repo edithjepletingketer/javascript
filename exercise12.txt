@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Greens Kiosk</title>
+</head>
+<body>
+
+  <h1 id="title">Welcome to Greens Kiosk</h1>
+
+  <p>We sell fruits and vegetables</p>
+
+<input id="addfruit" type="text" size="25"/>
+
+<button  value="addmore" onclick="fruits()" >submit fruits</button>
+
+
+
+  <ul id="fruit">
+     <li>Mangoes</li>
+    <li>Bananas</li>
+    <li>Water Melons</li>
+
+    </ul>
+
+
+<input id="addvegetable" type="text" size="25"/>
+<button  value="add" onclick="vegetables()" >submit vegetables</button>
+
+  
+
+  <ul id=veglist>
+    <li>Onions</li>
+    <li>Tomatoes</li>
+    <li>Kales</li>
+
+    </ul>
+
+</div>
+
+<div>
+
+</body>
+</html>
+
+
+
+JAVASCRIPT
+
+
+var greens =()=>{
+  var h1 = document.getElementById("title")
+ h1.style.color = h1.style.color == "green" ? "silver" : "green";
+}
+setInterval(greens, 1000);
+
+
+
+function fruits(){
+        var li = document.createElement("li");  
+        var input = document.getElementById("addfruit");
+        li.innerHTML = input.value;
+        input.value = "";
+
+        document.getElementById("frulist").appendChild(li);
+
+}
+
+
+
+function vegetables(){
+        var li = document.createElement("li");  
+        var input = document.getElementById("addvegetable");
+        li.innerHTML = input.value;
+        input.value = "";
+
+        document.getElementById("veglist").appendChild(li);
+
+}
